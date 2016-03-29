@@ -20,6 +20,19 @@ int main() {
   (*p_ptr).x = 10; // dereference (star) and get the property (dot)
   p_ptr->x = 10;   // dereference and get property (arrow)
 
+  int arr[5] = {1, 2, 3, 4, 5};
+
+  arr[4] = 10;
+  *(arr + 4) = 10;
+
+  int* a_ptr = &arr[0];
+  a_ptr[3] = 15;
+  *(a_ptr + 3) = 15;
+
+  if (a_ptr == arr) {
+    printf("a_ptr and arr are both %p", arr);
+  }
+
   printf("hello world");
   return 0;
 }

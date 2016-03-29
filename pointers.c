@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-int main() {
-  //pointer_example_one();
+void pointer_example_one();
 
+int main() {
+  pointer_example_one();
+/*
   int x = 5;
 
   int* ptr = &x;
   *ptr = 15;
   pointer_example_two(ptr);
-  printf("x is now %d", x);
+  printf("x is now %d", x);*/
 }
 
 void pointer_example_two(int* y) {
