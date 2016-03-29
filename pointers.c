@@ -1,6 +1,21 @@
 #include <stdio.h>
 
 int main() {
+  //pointer_example_one();
+
+  int x = 5;
+
+  int* ptr = &x;
+  *ptr = 15;
+  pointer_example_two(ptr);
+  printf("x is now %d", x);
+}
+
+void pointer_example_two(int* y) {
+  *y = 10;
+}
+
+void pointer_example_one() {
   int x[5] = {1, 7, 3, 4, 5};
 
   printf("the size of int is %lu\n", sizeof(int));
